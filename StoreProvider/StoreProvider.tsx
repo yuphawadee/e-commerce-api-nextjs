@@ -1,6 +1,6 @@
 'use client'
 
-import { CartProvider } from '@/store/CartContext'
+// import { CartProvider } from '@/store/CartContext'
 import { ProductProvider } from '@/store/context'
 import store from '@/store/store'
 import React from 'react'
@@ -10,9 +10,9 @@ const StoreProvider = ({ children }:{ children: React.ReactNode }) => {
   return (
     <Provider store={store}>
       <ProductProvider>
-        <CartProvider>
+        {/* <CartProvider> */}
       {children}    
-        </CartProvider>
+        {/* </CartProvider> */}
       </ProductProvider> 
     </Provider>
   )

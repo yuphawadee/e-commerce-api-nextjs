@@ -43,8 +43,8 @@ const FlashSales = () => {
         slidesToScroll: 1,
         draggable: true,
         speed: 500,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow onClick={() => {}} />,
+        prevArrow: <PrevArrow onClick={() => {}} />,
         // cssEase: "linear",
         responsive: [
             {

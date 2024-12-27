@@ -11,4 +11,5 @@ export type Product = {
     popular: boolean;
     onSale: boolean;
     discount: number;
+    // quantity: number;
 }

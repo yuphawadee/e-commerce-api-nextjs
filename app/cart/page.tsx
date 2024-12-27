@@ -94,7 +94,24 @@ const Cart = () => {
                                         <MinusIcon size={15} />
                                     </button>
                                     <span className='text-[0.75rem] font-semibold'>{item.quantity}</span>
-                                    <button onClick={() => dispatch(addItem({ id :item.id }))}>
+                                    <button onClick={() => dispatch(
+                                        addItem({
+                                            id: item.id,
+                                            title: item.title,
+                                            image: item.image,
+                                            price: item.price,
+                                            description: item.description,
+                                            brand: item.brand,
+                                            model: item.model,
+                                            color: item.color,
+                                            category: item.category,
+                                            discount: item.discount ?? 0,
+                                            onSale: item.onSale ?? false,
+                                            // quantity: 1, // เพิ่ม quantity ด้วย
+                                        })
+                                    )
+                                    }
+                                    >
                                         <Plus size={15} />
                                     </button>
                                 </div>

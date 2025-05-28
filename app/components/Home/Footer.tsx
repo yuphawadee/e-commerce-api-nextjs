@@ -15,11 +15,11 @@ const Footer = () => {
   return (
     <div className=' bg-[#141718]'>
       <div className='max-w-[1200px] m-auto text-[#E8ECEF] p-5'>
-        <div className='flex justify-between'>
+        <div className='flex flex-wrap justify-between'>
           <div className='w-[80px]'>
             <svg aria-hidden="true" className="preLogo-svg" focusable="false" viewBox="0 0 24 24" role="img" width="100%" height="100%" fill="none"><path fill="currentColor" fillRule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clipRule="evenodd"></path></svg>
           </div>
-          <div className='flex items-center gap-5'>
+          <div className='flex flex-wrap items-center gap-5 pb-5 lg:pb-0 md:pb-0'>
             {navigation.map((item) => (
               <Link key={item.name} href={item.href}>
                 {item.name}
